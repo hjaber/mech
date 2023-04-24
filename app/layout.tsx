@@ -16,9 +16,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      {/* @ts-ignore */}
-      <Navbar />
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {/* @ts-ignore */}
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
